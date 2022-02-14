@@ -3,8 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&family=Herr+Von+Muellerhoff&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 /* font-family: 'Cormorant', serif;
 font-family: 'Herr Von Muellerhoff', cursive; */
 
@@ -41,8 +40,7 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --ff-primary: "Herr Von Muellerhoff", cursive;
-  --ff-secondary: "Cormorant", serif;
+  --ff-primary: "Lato", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -142,7 +140,6 @@ p {
   /* font-weight: 700; */
   transition: var(--transition);
   font-size: 0.875rem;
-  font-family: var(--ff-secondary);
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -178,12 +175,10 @@ Hero
 }
 
 .hero-banner h1 {
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
+  text-transform: uppercase;
 }
 
 .hero-banner p {
-  font-family: var(--ff-secondary);
   margin-left: auto;
   margin-right: auto;
   color: var(--clr-white);
@@ -252,12 +247,7 @@ Media Query
     padding: 0;
   }
 
-  .hero-banner h1 {
-    font-size: 6rem;
-    letter-spacing: 0.75rem;
-  }
-
   .hero-banner p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
